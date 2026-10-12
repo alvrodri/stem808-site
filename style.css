@@ -1,0 +1,102 @@
+:root {
+  --bg: #121110;
+  --surface: #1c1a18;
+  --border: #2e2a27;
+  --text: #f4efe9;
+  --muted: #b9ab9c;
+  --accent: #dbb596;
+  --skin: #c9a58a;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 56px 20px 80px;
+}
+
+a { color: var(--accent); }
+
+header.hero {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+header.hero img {
+  width: 128px;
+  height: 128px;
+  border-radius: 28px;
+  box-shadow: 0 12px 40px rgba(201, 165, 138, 0.18);
+}
+
+h1 {
+  font-size: clamp(2rem, 6vw, 2.75rem);
+  line-height: 1.15;
+  margin: 24px 0 8px;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 1.35rem;
+  margin: 48px 0 12px;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: 1.05rem;
+  margin: 0 0 4px;
+}
+
+.tagline {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px 22px;
+  margin: 12px 0;
+}
+
+.card p { margin: 0; color: var(--muted); }
+
+.contact {
+  text-align: center;
+}
+
+.contact .email {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  user-select: all;
+}
+
+.legal p, .legal li { color: var(--muted); }
+.legal li { margin: 6px 0; }
+.legal strong { color: var(--text); }
+
+footer {
+  margin-top: 64px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  justify-content: space-between;
+}
